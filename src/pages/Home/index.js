@@ -42,12 +42,12 @@ export default function Home() {
       setIsLoading(true);
       try {
         await axios
-          .get("http://demo0129790.mockable.io/getProject")
+          .get("https://demo0129790.mockable.io/getProject")
           .then((res) => {
             setDataProject(res.data);
           });
         await axios
-          .get("http://demo0129790.mockable.io/getTodolist")
+          .get("https://demo0129790.mockable.io/getTodolist")
           .then((res) => {
             setTodolist(res.data);
           });
