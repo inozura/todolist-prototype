@@ -1,0 +1,36 @@
+.search {
+  margin-bottom: 20px;
+  width: 300px;
+  .input-group {
+    border-radius: 25px !important;
+    height: 50px;
+    background-color: rgba(117, 117, 117, 0.3);
+  }
+  .input-group-text {
+    background-color: unset;
+    border: unset;
+  }
+  .form-control {
+    background-color: transparent;
+    border: unset;
+    outline: none !important;
+    color: white;
+  }
+  ::placeholder {
+    color: white;
+  }
+}
+input::focus {
+  outline: none !important;
+}
+
+@media (max-width: 768px) {
+  .search {
+    width: 250px !important;
+    margin-bottom: 3px;
+
+    .input-group {
+      height: unset;
+    }
+  }
+}
