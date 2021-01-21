@@ -1,0 +1,47 @@
+.card-project {
+  max-width: 130px;
+  min-width: 110px;
+  max-height: 130px;
+  min-height: 110px;
+  transition: .5s ease-in-out;
+  .main-card {
+    max-height: 100%;
+    max-width: 130px;
+    min-width: 110px;
+    border-radius: 5px;
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 11px;
+    transition: .5s ease-in;
+  }
+
+  .init-title {
+    color: white;
+    text-align: center;
+  }
+
+  .sub-title {
+    text-align: center;
+  }
+
+  .border-main-card {
+    height: 150px;
+    width: 150px;
+    padding: 8px;
+  }
+
+  &:hover {
+    .border-main-card {
+      transition: .5s ease-in-out;
+      position: relative;
+      background: linear-gradient(to right, red, purple);
+      .bg-main-card {
+        padding: 7px;
+        background-color: rgb(33, 40, 43);
+      }
+    }
+  }
+}
